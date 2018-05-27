@@ -4,31 +4,38 @@ hello-shapes-blazor
 This is my warm-up project to learn about Blazor.  I usually port on of my shapes projects as a small architecture spike to run a lean experiment prior to committing to a more complex project.
 
 ## What is Blazor?
-Blazor is an experimental framework that Microsoft is advancing to empower next generation web appications with the benefits of a static typed language such as C#.  It was originated by Steve Sanderson of the Microsoft ASP.NET team as recently evangelized at Micrososft Build 2018 as part of upcoming .NET Core 2.1, etc product roadmap.
+Blazor is an experimental framework that Microsoft is advancing to empower next generation web appications with the benefits of a static typed language such as C#.  It was originated by Steve Sanderson of the Microsoft ASP.NET team as recently evangelized at Micrososft Build 2018 as part of upcoming future .NET Core 2.x product roadmap.
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+These instructions are for using .NET Core on command line (tested on Mac, OSX).
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+You will need a specific version of .NET Core.  Shortly after Build 2018, .NET Core 2.1 RC was released.
 
 ```
-Give examples
+.NET 
 ```
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
+- Download .NET Core
 
-Say what the step will be
+- Install Blazor project template
+- Create .NET Core project
+- Change to project directory
+- Run app
 
 ```
-Give the example
+dotnet new -i Microsoft.AspNetCore.Blazor.Templates
+dotnet new blazor -o hello-shapes-blazor
+cd hello-shapes-blazor
+dotnet run
 ```
 
-And repeat
+- View default app
+- See scaffolded apps
 
 ```
 until finished
@@ -79,3 +86,8 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 ## Acknowledgments
 
 * Steve Sanderson
+https://github.com/SteveSanderson/Blazor
+https://github.com/aspnet/blazor
+
+* Daniel Roth
+https://blogs.msdn.microsoft.com/webdev/2018/03/22/get-started-building-net-web-apps-in-the-browser-with-blazor/

@@ -47,6 +47,16 @@ End with an example of getting some data out of the system or using it for a lit
 
 Explain how to run the automated tests for this system
 
+- simple circle
+  - Blazor page
+  - one button; one algorithm
+- multiple shapes (circle, square, rectangle)
+  - Blazor page
+  - multiple buttons
+  - show current shape state
+- calculation as REST service
+- calculation Blazor library
+
 ### Break down into end to end tests
 
 Explain what these tests test and why

@@ -43,19 +43,33 @@ until finished
 
 End with an example of getting some data out of the system or using it for a little demo
 
+## Adding features
+- Shapes 1
+  - implement simple shape as a Circle
+  - introduce algorithm for GetArea()
+  - 1 button; triggers 1 algorithm
+  - simple data bind to Razor page 
+  - introduce a TDD/BDD unit test
+
+- Shapes 2
+  - introduce Shape abstraction for Circle, Triangle, Rectangle
+  - introduce algorithms for GetArea()
+  - 1 multi-select and 1 button; triggers 1 algorithm
+
+- Shapes 3
+  - introduce (client side) Razor page library
+
+- Shapes 4
+  - introduced fixed API route
+  - introduce (server side) REST API for algorithms
+
+- Shapes 5
+  - introduced API Gateway pattern
+  - introduce (server side) REST API for algorithms
+
 ## Running the tests
 
 Explain how to run the automated tests for this system
-
-- simple circle
-  - Blazor page
-  - one button; one algorithm
-- multiple shapes (circle, square, rectangle)
-  - Blazor page
-  - multiple buttons
-  - show current shape state
-- calculation as REST service
-- calculation Blazor library
 
 ### Break down into end to end tests
 

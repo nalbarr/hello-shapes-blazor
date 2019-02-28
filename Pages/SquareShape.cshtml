@@ -1,22 +1,22 @@
-﻿@page "/shapes1"
+﻿@page "/squareshape"
 
-<h1>Shapes1</h1>
+<h1>Square</h1>
 
-<p>Shape: @shape</p>
-<p>Radius: @radius</p>
+<p>Shape Type: @shapeType</p>
+<p>Argument 1: @side</p>
 <p>Current area: @currentArea</p>
 
 <button class="btn btn-primary" onclick="@GetArea">Get Area</button>
 <button class="btn btn-primary" onclick="@Clear">Clear</button>
 
 @functions {
-    string shape = "circle";
-    double radius = 2.0;
+    string shapeType = "square";
+    double side = 2.0;
     double currentArea = 0.0;
 
     private void GetArea()
     {
-	currentArea = 3.14 * radius;
+	    currentArea = side * side;
     }
 
     private void Clear()
@@ -24,7 +24,7 @@
         currentArea = 0.0;
     }
     
-    class Circle {
-        public double radius;
+    class Square {
+        public double side = 0.0;
     }
 }

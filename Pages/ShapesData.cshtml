@@ -1,0 +1,49 @@
+﻿@page "/shapesdata"
+@inject HttpClient Http
+
+<h1>Shapes list</h1>
+
+<p>This component demonstrates fetching shape data from the server.</p>
+
+@if (shapes == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Argument1</th>
+                <th>Area</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var shape in shapes)
+            {
+                <tr>
+                    <td>@shape.Id</td>
+                    <td>@shape.Type</td>
+                    <td>@shape.Argument1</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@functions {
+    Shape[] shapes;
+
+    protected override async Task OnInitAsync()
+    {
+        shapes = await Http.GetJsonAsync<Shape[]>("/sample-data/shapes.json");
+    }
+
+    class Shape
+    {
+        public string Id { get; set; }
+        public int Type { get; set; }
+        public int Argument1 { get; set; }
+    }
+}

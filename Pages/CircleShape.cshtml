@@ -1,0 +1,30 @@
+﻿@page "/circleshape"
+
+<h1>Circle</h1>
+
+<p>Shape Type: @shapeType</p>
+<p>Argument1: @radius</p>
+<p>Current area: @currentArea</p>
+
+<button class="btn btn-primary" onclick="@GetArea">Get Area</button>
+<button class="btn btn-primary" onclick="@Clear">Clear</button>
+
+@functions {
+    string shapeType = "circle";
+    double radius = 2.0;
+    double currentArea = 0.0;
+
+    private void GetArea()
+    {
+	    currentArea = 3.14 * radius;
+    }
+
+    private void Clear()
+    {
+        currentArea = 0.0;
+    }
+    
+    class Circle {
+        public double radius = 0.0;
+    }
+}

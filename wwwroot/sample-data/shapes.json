@@ -1,0 +1,22 @@
+﻿[
+  {
+    "Id": "1",
+    "Type": "Circle",
+    "Argument1": "2"
+  },
+  {
+    "Id": "2",
+    "Type": "Square",
+    "Argument1": "2"
+  },
+  {
+    "Id": "3",
+    "Type": "Circle",
+    "Argument1": "3"
+  },
+  {
+    "Id": "4",
+    "Type": "Square",
+    "Argument1": "3"
+  }
+]
